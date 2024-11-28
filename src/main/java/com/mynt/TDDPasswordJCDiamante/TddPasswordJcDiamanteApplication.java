@@ -15,6 +15,7 @@ public class TddPasswordJcDiamanteApplication {
 				"Password",      // No number
 				"password1!",    // No uppercase
 				"Password1",     // No special character
+				"Password 1!",    // With Whitespace
 				"Password1!"     // Valid password
 		};
 

@@ -33,6 +33,12 @@ public class PasswordValidator {
             errors.add("Password must contain at least one special character");
         }
 
+        // Check if there's a space (or any whitespace)
+        if (password.matches(".*\\s.*")) {
+            isValid = false;
+            errors.add("Password cannot contain spaces");
+        }
+
         return new ValidationResult(isValid, errors);
     }
 

@@ -28,6 +28,12 @@ public class PasswordValidator {
             errors.add("Password must contain at least one special character");
         }
 
+        // Check if there's a space (or any whitespace)
+        if (password.matches(".*\\s.*")) {
+            errors.add("Password cannot contain spaces");
+        }
+
+
         // Return validation result
         return new ValidationResult(errors.isEmpty(), errors);
     }
