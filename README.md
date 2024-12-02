@@ -95,3 +95,9 @@ class TddPasswordJcDiamanteApplicationTests {
 
 
 ```
+
+## Cucumber Tests Output
+
+![Cucumber Report 1](Assets/cucumber_report1.png)
+
+![Cucumber Report 2](Assets/cucumber_report2.png)
